@@ -9,6 +9,8 @@ If I move my hand the points maintain in the same place.
 
 It works by selecting some points (it is done by the same ORB detector), gives them a direction, angle and position, and it searches the points in the next frame and see if they changed. So you can know if the object has changed the postition and it's direction or not and you can position it in the space.
 
+You can also specify a "mask", a matrix that contains 0s into the non important pixels of the image, and any other value in the ones that you can use to search for.
+
 References:
 
 [1] Hian-Kun Tenn. "OpenCV ORB feature matching" 2014.
